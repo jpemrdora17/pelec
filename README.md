@@ -1,2 +1,2 @@
-# pelec
+# enrollment-form
 enrollment form
