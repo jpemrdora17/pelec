@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Enrollment Form</h1>
+    <h3>Instructions:</h3>
+    <ol>
+        <li>Fill in the form fields.</li>
+        <li>Check your interests.</li>
+        <li>Click "Enroll Now" to submit.</li>
+    </ol>
+
+    <form>
+        <div>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="1" required>
+        </div>
+        <div>
+            <label>Sex</label>
+            <input type="radio" id="male" name="sex" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="Female" required>
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="course">Course Options</label>
+            <select id="course" name="course" required>
+                <option value="BSIT">BSIT</option>
+                <option value="BSSW">BSSW</option>
+                <option value="BSPA">BSPA</option>
+            </select>
+        </div>
+        <div>
+            <label>Interests</label>
+            <input type="checkbox" id="webDevelopment" name="interests" value="Web Development">
+            <label for="webDevelopment">Web Development</label>
+            <input type="checkbox" id="dataScience" name="interests" value="Data Science">
+            <label for="dataScience">Data Science</label>
+            <input type="checkbox" id="networking" name="interests" value="Networking">
+            <label for="networking">Networking</label>
+            <input type="checkbox" id="graphicDesign" name="interests" value="Graphic Design">
+            <label for="graphicDesign">Graphic Design</label>
+        </div>
+        <button type="submit">Enroll Now</button>
+    </form>
+
+    <h3>Enrolled Students</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Cj Bagnes</td>
+                <td>Cj@gmail.com</td>
+                <td>20</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Web Development, Networking</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kyla Zarsuelo</td>
+                <td>kylaZarsuelo@gmail.com</td>
+                <td>21</td>
+                <td>Female</td>
+                <td>BSSW</td>
+                <td>Data Science</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Melvin Perina</td>
+                <td>perinaMelvin@gmail.com</td>
+                <td>23</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>WEB DEVELOPER</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
